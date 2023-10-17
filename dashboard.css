@@ -1,0 +1,17 @@
+
+div canvas {
+    height: 300px !important; 
+    width: 300px !important; 
+
+}
+.bar_cht_div{
+    width: -webkit-fill-available;
+    height: 400px !important;
+    /* margin-left: 50px; */
+    white-space: nowrap;
+}
+
+#bar{
+    width: -webkit-fill-available !important;
+    height: 400px !important;
+}

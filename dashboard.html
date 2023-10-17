@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Dashboard page</title>
+  <!--Bottstrap cdn  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="dashboard.css" />
+  <link rel="stylesheet" href="allpages.css" />
+  <link rel="stylesheet" href="expenses.css" />
+  <link rel="stylesheet" href="sidebar.css" />
+
+  <!-- chart js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+
+
+  <!-- <script src="./settings.js"></script> -->
+</head>
+
+<body class="dashboard_body_cls">
+  <div class="container-fluid">
+    <div class="row">
+      <nav class="col-md-2 d-none d-md-block" id="sidebar">
+        <div class="sidebar-sticky">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <h1 class="navbar-brand col-sm-3 col-md-2 mr-0" alt="Companyname" id="company-name"
+                style="height: 65px; padding-top: 26px">
+                Companyname
+              </h1>
+              <i style="margin-left: 92%" class="fa-solid fa-xmark xmark" onclick="switchSidebar()"></i>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" style="font-weight: bold" href="dashboard.html">
+                <span data-feather="home"></span>
+                Dashboard
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./expenses.html">
+                <span data-feather="file"></span>
+                Expenses
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./settings.html"> Settings </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4" id="main-page">
+        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
+          <a>
+            <label style="padding-left: 15px" class="inputLabel" onclick="switchSidebar()"><i
+                class="fa-solid fa-bars bar_icon" id="bars"></i></label></a>
+          <h1 class="h2">Dashboard</h1>
+          <div class="btn-toolbar mb-2 mb-md-0">
+            <div class="btn-group mr-2"></div>
+
+            <button class="btn btn-sm btn-danger" onclick="logout()">
+              logout
+            </button>
+          </div>
+        </div>
+
+
+
+        <div style="height: 768px;">
+
+          <!-- Bar chart -->
+          <div class=".bar_cht_div" style="    width: -webkit-fill-available;
+          height: 400px;
+          margin-left: 50px;
+          white-space: nowrap;">
+
+
+
+            <canvas id="bar" role="img" style="display: block;
+          box-sizing: border-box;
+          height: 100%;
+          width: 100%;"></canvas>
+
+
+          </div>
+
+          <!-- Doughnut chart -->
+          <div class="input-group" style="width: 250px; margin-left: 50px">
+            <div>
+              <select class="form-select" id="doughnut_select"></select>
+            
+            
+              <canvas id="doughnut" role="img"></canvas>
+            </div>
+          </div>
+
+        </div>
+        <!-- body of page -->
+      </main>
+    </div>
+  </div>
+
+  <!-- modal script -->
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+    integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <!-- <script src="./chartCDN.js"></script> -->
+  <script src="./chart.js"></script>
+  <script src="./sidebar.js"></script>
+  <script src="./logOut.js"></script>
+
+  <script src="./logedin.js"></script>
+</body>
+
+</html>

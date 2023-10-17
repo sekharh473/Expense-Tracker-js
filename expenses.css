@@ -1,0 +1,54 @@
+.table-responsive{
+    margin-top:60px
+}
+.newExpense{
+    float: right;
+}
+.modal-header{
+    border-bottom: none;
+}
+.modal_tabs{
+    width:100%;
+    border-radius: 15px !important;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    border-width: 2px !important;
+    border-color: #ededde !important;
+}
+.table{
+    white-space: nowrap;
+}
+td.debitrow{
+    background-color: rgb(255, 193, 193);
+    color: rgb(0, 0, 0);
+}
+td.creditrow{
+    background-color: rgb(202, 255, 199);
+    color: rgb(0, 0, 0);
+}
+.table tbody {
+    vertical-align: middle;
+}
+
+.badge {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    padding: 5px 10px;
+    border-radius: 50%;
+    /* background: red; */
+    color: white;
+  }
+
+  .cred_badge{
+    background: rgb(31, 236, 0);
+  }
+  .deb_badge{
+    background: rgb(255, 8, 0);
+  }
+
+  .btn .badge {
+    position: relative;
+    top: -18px;
+    right: -15px;
+}

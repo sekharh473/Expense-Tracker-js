@@ -1,0 +1,71 @@
+/* Theme color :  https://colorhunt.co/palette/6528f7a076f9d7bbf5ede4ff */
+
+
+#sidebar{
+    /* background-color: antiquewhite; */
+    /* height: 768px; */
+    height: 100%;
+    width: 260px;
+    position: fixed;
+    /* z-index: 1; */
+    top: 0;
+    left: 0;
+}
+/* .header{
+    background-color: #6528F7;
+} */
+
+body{
+    background-color: #EDE4FF;
+}
+
+#main-page{
+    /* background-color: #EDE4FF; */
+    margin-left: 260px;
+    height: 100%;
+    /* position: ; */
+}
+
+.dropdown-toggle {
+    margin-right: 8px;
+}
+
+.nav-link {
+    color: black;
+}
+
+@media (min-width: 768px) {
+    #main-page {
+        margin-left: 260px;
+    height: 100%;
+    }
+    .xmark{
+        display: none;
+    }
+}
+
+@media(max-width:767px) {
+
+    .sidebar {
+        transform: translateX(-100%);
+
+    }
+
+    .main_page {
+        margin-left:0px !important;
+        /* position: absolute; */
+        /* width: -webkit-fill-available; */
+    }
+
+    @media(max-width:576px) {
+        #sidebar_menu {
+            transform: translateX(-100%);
+            max-width: 30%;
+        }
+
+    }
+}
+
+tr td{
+    background-color: #6528F7;
+}

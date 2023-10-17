@@ -1,0 +1,40 @@
+#sidebar{
+    background-color:#D7BBF5
+}
+
+@media(min-width:768px){
+    #sidebar{
+        z-index: 15;
+    }
+   
+    #bars{
+        display: none;
+    }
+
+    .xmark{
+        display: none;
+    }
+
+}
+
+@media(max-width:767px){
+    #sidebar{
+        z-index: 15;
+        position:absolute;
+        width: 30%;
+    }
+   
+    #bars{
+        display: block;
+    }
+    .xmark{
+        display: block;
+    }
+
+}
+/* @media(max-width:450){
+    #sidebar{
+        z-index: 15;
+    }
+   
+} */
